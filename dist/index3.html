@@ -53,14 +53,14 @@
     <nav
         class="hover:cursor-pointer w-full sticky top-0 space-x-4  bg-white flex justify-between items-center text-slate-900 z-50">
         <div class="pl-2 w-20"><img src="./static/header_brand_logo_PE.png" alt="PETER ENGLAND"></div>
-        <ul class="hidden md:flex space-x-4 items-center font-thin gap-4 flex-wrap">
+        <ul class="hidden md:flex space-x-4 items-center font-thin justify-center">
             <li class="hover:text-blue-500 ">MEN</li>
             <li class="hover:text-blue-500 ">CRICKET</li>
             <li class="hover:text-blue-500 ">WEDDING STORE</li>
             <li class="hover:text-blue-500 ">NEW ARRIVALS</li>
             <li class="hover:text-blue-500 ">KIDS</li>
             <li class="hover:text-blue-500 ">CUSTOMER</li>
-            <li>
+            <li class="hidden lg:flex ">
                 <div class="relative">
                     <i class="absolute fa fa-search text-gray-400 top-3 left-4 hover:text-green-500"></i>
                     <input type="text"
@@ -189,7 +189,7 @@
         <header class="w-full h-full justify-center max-w-screen-xl mt-4 gap-4 flex flex-col ">
             <h1 class="text-xl font-sans text-slate-900 font-bold pl-4 pb-4 ">FEATURED COLLECTIONS</h1>
 
-            <div class="flex flex-wrap cursor-pointer justify-center gap-2 items-center m-2 ">
+            <div class="flex flex-wrap cursor-pointer justify-center gap-2 items-center mb-4 ">
                 <div><img src="./static/PE_D_FC_Whites.jpg" alt=""></div>
                 <div><img src="./static/PE_D_FC_Black.jpg" alt=""></div>
                 <div><img src="./static/PE_D_FC_Checks.jpg" alt=""></div>
@@ -203,18 +203,18 @@
 
 
     <div class="w-full h-full bg-black flex flex-col md:flex-row items-center justify-between gap-2 ">
-        <div class="text-white flex flex-col justify-center m-2 md:w-1/4 gap-4 ">
+        <div class="text-white flex flex-col justify-center m-5 md:w-1/4 gap-4 text-justify">
             <h2>GET FLAT10% OFF ON APP AND WEB</h2>
             <p class="text-sm ">Download the Peter England App and get Flat 10% off on your first purchase. Use Code
                 PEFIRST10. T&C applies!</p>
 
-            <div class="flex flex-wrap gap-4 justify-center pb-10 ">
+            <div class="flex flex-wrap gap-4 justify-center pb-5 ">
                 <img src="./static/pe_app_store_2x.png" alt="">
                 <img src="./static/pe_google_store_2x.png" alt="">
             </div>
         </div>
 
-        <div class="md:w-1/4 flex justify-center">
+        <div class="md:w-1/4 flex justify-center pb-5">
             <img src="./static/PE_QR_Code.png" alt="">
         </div>
 
@@ -228,7 +228,7 @@
             <div class="md:w-2/3 p-5">
 
 
-                <video class="rounded-2xl" src="./static/PETER_ENGLAND_45SEC_10MB.mp4" controls></video>
+                <video class="rounded-2xl" src="./static/PETER_ENGLAND_45SEC_10MB.mp4" controls autoplay muted></video>
             </div>
 
 
@@ -236,7 +236,6 @@
                 <span class="text-black text-sm font-bold mt-5 border-b-4 border-green-500 uppercase self-start">
                     The Gentlemen's League
                 </span>
-
 
                 <p class="text-black text-xl mt-4 font-bold font-serif">
                     Introducing Peter England's Gentlemen's League. An all-new collection that’s inspired by our dearest
@@ -519,58 +518,114 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer
-        class="w-full bg-slate-800 px-4 text-white pt-8 flex flex-col md:flex-row flex-wrap justify-center items-center md:px-12">
-
-        <div class="mb-4 md:mb-0">
-            <p class="mt-2">Email us: rajputkiran2805@gmail.com</p>
+    <div class="w-full flex bg-green-600">
+        <div class="flex justify-center items-center p-4 flex-wrap gap-6">
+            <img src="./static/icon/v-hicon-loyalty-pe.svg" alt="">
+            <div class="flex flex-col ">
+                <h2 class="text-white uppercase text-xl font-extrabold">Refer & Earn with the Referral Program</h2>
+                <p class="text-white text-sm font-semibold">Invite your friends and earn up to ₹ 7500 in discounts.</p>
+            </div>
+            <button
+                class="bg-white text-black rounded-sm px-4 py-2 font-bold uppercase hover:shadow-black shadow-sm ">Sign
+                up
+                now</button>
         </div>
+    </div>
 
-        <!-- <div class="mb-4 md:mb-0">
-            <h2 class="font-bold text-md border-b-2 border-yellow-400 rounded-sm">PW Skills</h2>
-            <ul class="mt-2 space-y-1">
-                <li>About us</li>
-                <li>FAQs</li>
-                <li>Privacy Policy</li>
-            </ul>
+
+
+
+
+
+
+    <div class="w-full bg-green-600">
+        <div class="flex items-center justify-around p-8 m-2 flex-wrap gap-6 ">
+            <div class="flex flex-col ">
+                <p class="text-white text-xs font-semibold uppercase">Peter England Members</p>
+                <h2 class="text-white uppercase text-lg font-semibold pt-1 pb-1">Earn Points Every Time You Purchase
+                </h2>
+                <p class="text-white text-sm ">Register with us to get latest updates and spend your points
+                    to buy.</p>
+            </div>
+            <button
+                class="bg-white text-black rounded-sm px-4 py-2 font-bold uppercase hover:shadow-black shadow-sm ">Sign
+                up
+                now</button>
         </div>
+    </div>
 
-        <div class="mb-4 md:mb-0">
-            <h2 class="font-bold text-md border-b-2  border-yellow-400 rounded-sm">Products</h2>
-            <ul class="mt-2 space-y-1">
-                <li>PW Skills Lab</li>
-                <li>Job Portal</li>
-                <li>Experience Portal</li>
-                <li>Become an affiliate</li>
-                <li>Hall of Fame</li>
-            </ul>
+
+
+
+
+    <footer>
+        <div class="class bg-white w-full h-full text-gray-300 flex flex-wrap gap-10 justify-around pl-5 pr-5 ">
+            <div class="flex flex-col items-center pb-4">
+                <img src="./static/icon/p-hicon-delivery_2x.png" class="w-16 h-16 " />
+                <p class="text-gray-600 text-xs">FREE SHIPPING</p>
+            </div>
+            <div class="flex flex-col items-center pb-4">
+                <img src="./static/icon/pe-hicon-return.png" class="w-16 h-16" />
+                <p class="text-gray-600 text-xs">RETURN WITHIN 15 DAYS</p>
+            </div>
+            <div class="flex flex-col items-center pb-4">
+                <img src="./static/icon/p-eicon-fastdelivery_2x.png" class=" w-16 h-16" />
+                <p class="text-gray-600 text-xs">EXPRESS DELIVERY IN STORE MODE</p>
+            </div>
+
         </div>
+        <div class="bg-gray-800 w-full h-full text-gray-300 flex flex-wrap gap-10 justify-around pb-10 pt-10">
+            <div class=" ml-10 mr-10">
+                <ul class="flex flex-col gap-2 text-sm justify-start ">
+                    <li class="font-extrabold text-gray-200">NEED HELP?</li>
+                    <li><a href="#" class="hover:underline">Order Status</a></li>
+                    <li><a href="#" class="hover:underline">Delivery </a></li>
+                    <li><a href="#" class="hover:underline">Returns</a></li>
+                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                    <li><a href="#" class="hover:underline">Shipping Policy</a></li>
+                    <li><a href="#" class="hover:underline">Return and Cancellation Policy </a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="ml-10 mr-10">
+                <ul class="flex flex-col gap-2 text-sm  ">
+                    <li class="font-extrabold text-gray-200">ABOUT US</li>
+                    <li><a href="#" class="hover:underline">Aditya Birla Fashion & Retail Ltd</a></li>
+                    <li><a href="#" class="hover:underline">Find a Store</a></li>
+                    <li><a href="#" class="hover:underline">Peter England Blogs</a></li>
+                    <li><a href="#" class="hover:underline">Terms and conditions For Membership Program</a></li>
+                    <li><a href="#" class="hover:underline">Bulk Order</a></li>
+                </ul>
+            </div>
 
-        <div class="mb-4 md:mb-0">
-            <h2 class="font-bold text-md border-b-2 border-yellow-400 rounded-sm">Links</h2>
-            <ul class="mt-2 space-y-1">
-                <li>Careers</li>
-                <li>Contact us</li>
-                <li>PW Skills Blog</li>
-                <li>PW Youtube</li>
-            </ul>
-        </div> -->
 
+            <div class="flex flex-col gap-4 text-sm ml-10 mr-10">
+                <p class=" font-extrabold text-gray-200">JOIN THE PETER ENGLAND COMMUNITY</p>
+                <div class="flex gap-2 flex-col">
+                    <input class="p-2 rounded-lg bg-transparent w-full " type="email" name="email" id="email"
+                        placeholder="Enter your email / mobile number">
+
+                    <p>Signup for updates on the latest Peter England collection, campaigns and videos.</p>
+                </div>
+
+                <div class="flex gap-2 justify-between ">
+                    <p class="font-extrabold text-gray-200">FIND US ON SOCIAL</p>
+                    <div class="flex gap-4 flex-wrap">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/37c426a25e.js" crossorigin="anonymous"></script>
 </body>
+
+
 
 </html>
