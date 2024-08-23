@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+
+
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body class="bg-white">
+
+
+    <!-- navbar -->
+
+    <nav
+        class="flex  hover:cursor-pointer w-full p-2 pl-2 space-x-4 bg-slate-900 text-white  justify-between items-center z-40 ">
+
+        <div class="flex gap-5 items-center">
+            <p class="font-sans">More Brands</p>
+            <div class="">
+                <p class="text-xs">Delivering to</p>
+                <p class="text-xs font-semibold underline ">Add delivery location</p>
+            </div>
+        </div>
+
+        <div>
+
+            <ul class="hidden md:flex gap-6 text-sm items-center">
+                <li class=" hover:text-amber-500 flex items-center gap-2 border-r-2 border-slate-700 pr-4 "><i
+                        class="fa-solid fa-location-dot"></i>STORES
+                </li>
+                <li class=" hover:text-amber-500 flex items-center gap-2 border-r-2 border-slate-700 pr-4"> <i
+                        class="fa-regular fa-message "></i>CONTACT US</li>
+                <li class="hover:text-amber-500 flex items-center gap-2 border-r-2 border-slate-700 pr-4"> <i
+                        class="fa-solid fa-user"></i>LOG IN</li>
+                <li class="hover:text-amber-500 border-r-2 border-slate-700 pr-4"><i class="fa-solid fa-heart"></i></i>
+                </li>
+                <li class="hover:text-amber-500"><i class="fa-solid fa-bag-shopping"></i></li>
+            </ul>
+        </div>
+
+    </nav>
+    <nav
+        class="hover:cursor-pointer w-full sticky top-0 space-x-4  bg-white flex justify-between items-center text-slate-900 z-50">
+        <div class="pl-2 w-20"><img src="./static/header_brand_logo_PE.png" alt="PETER ENGLAND"></div>
+        <ul class="hidden md:flex space-x-4 items-center font-thin justify-center">
+            <li class="hover:text-blue-500 ">MEN</li>
+            <li class="hover:text-blue-500 ">CRICKET</li>
+            <li class="hover:text-blue-500 ">WEDDING STORE</li>
+            <li class="hover:text-blue-500 ">NEW ARRIVALS</li>
+            <li class="hover:text-blue-500 ">KIDS</li>
+            <li class="hover:text-blue-500 ">CUSTOMER</li>
+            <li class="hidden lg:flex ">
+                <div class="relative">
+                    <i class="absolute fa fa-search text-gray-400 top-3 left-4 hover:text-green-500"></i>
+                    <input type="text"
+                        class="bg-white text-black pl-10 font-semibold h-10 w-full px-12 rounded-lg focus:outline-none hover:cursor-pointer"
+                        name="">
+                    <span class="absolute top-2 right-5 border-l pl-4"><i
+                            class="fa fa-microphone text-gray-500 hover:text-green-500 hover:cursor-pointer"></i></span>
+                </div>
+            </li>
+
+        </ul>
+        <div class="hidden md:block  hover:text-yellow-500 cursor-pointer pr-4"><img src="./static/ABFRL_logo_image.svg"
+                alt="ADBF">
+        </div>
+
+        <div class=" pr-5 md:hidden">
+            <a href="#">&#8801; </a>
+        </div>
+
+    </nav>
+
+
+    <div class="carousel w-full h-full  md:flex">
+        <div id="slide1" class="carousel-item relative w-full">
+            <img src="./static/PE-HB-Yacht-August-D.jpg" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide6" class="text-2xl ">❮</a>
+                <a href="#slide2" class="text-2xl">❯</a>
+            </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+            <img src="./static/PE_HB_Denim_D.jpg" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="text-2xl">❮</a>
+                <a href="#slide3" class="text-2xl">❯</a>
+            </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+            <img src="./static/PE-HB-Gentlemens-League-August-D.jpg" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="text-2xl">❮</a>
+                <a href="#slide4" class="text-2xl">❯</a>
+            </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+            <img src="./static/PE-HB-Independence-August-D.jpg" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="text-2xl">❮</a>
+                <a href="#slide5" class="text-2xl">❯</a>
+            </div>
+        </div>
+        <div id="slide5" class="carousel-item relative w-full">
+            <img src="./static/PE-HB-Zodiac-August-D.jpg" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="text-2xl">❮</a>
+                <a href="#slide6" class="text-2xl">❯</a>
+            </div>
+        </div>
+        <div id="slide6" class="carousel-item relative w-full">
+            <img src="./static/PE_D_Performbanner.jpg" class="w-full" />
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide5" class="text-2xl">❮</a>
+                <a href="#slide1" class="text-2xl">❯</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <section class="w-full h-full  bg-gray-100 flex flex-col items-center justify-center">
+        <h1 class="text-xl font-sans text-slate-900 font-semibold mt-6 mb-2">TOP CATEGORIES</h1>
+        <div class="carousel flex space-x-4 py-4 px-8 max-w-screen-xl w-[95%] cursor-pointer ">
+
+            <div id="s1" class="carousel-item flex flex-col items-center">
+                <img src="./static/PE_D_TC_7.jpg" class="w-48 h-48 rounded-full object-cover" />
+                <p class="text-slate-900 font-bold text-sm mt-2 uppercase">Accessories</p>
+            </div>
+            <div id="s2" class="carousel-item flex flex-col items-center">
+                <img src="./static/PE_D_Topcategories_11_Jeans.jpg" class="w-48 h-48 rounded-full object-cover" />
+                <p class="text-slate-900 font-bold text-sm mt-2">JEANS</p>
+            </div>
+            <div id="s3" class="carousel-item flex flex-col items-center">
+                <img src="./static/PE_D_Topcategories_12_Footwear.jpg" class="w-48 h-48 rounded-full object-cover" />
+                <p class="text-slate-900 font-bold text-sm mt-2">FOOTWEARS</p>
+
+            </div>
+            <div id="s4" class="carousel-item flex flex-col items-center">
+                <img src="./static/PE_D_Topcategories_13_Activewear.jpg" class="w-48 h-48 rounded-full object-cover" />
+                <p class="text-slate-900 font-bold text-sm mt-2">ACTIVEWEAR</p>
+
+            </div>
+            <div id="s5" class="carousel-item flex flex-col items-center">
+                <img src="./static/PE_D_Topcategories_15_Shirts.jpg" class="w-48 h-48 rounded-full object-cover" />
+                <p class="text-slate-900 font-bold text-sm mt-2">SHIRTS</p>
+
+            </div>
+            <div id="s6" class="carousel-item flex flex-col items-center">
+                <img src="./static/PE_D_Topcategories_16_Jackets.jpg" class="w-48 h-48 rounded-full object-cover" />
+                <p class="text-slate-900 font-bold text-sm mt-2">JACKETS</p>
+
+            </div>
+            <div id="s7" class="carousel-item flex flex-col items-center">
+                <img src="./static/PE_D_Topcategories_11_T_Shirts.jpg" class="w-48 h-48 rounded-full object-cover" />
+                <p class="text-slate-900 font-bold text-sm mt-2">T-SHIRTS</p>
+
+            </div>
+            <div id="s8" class="carousel-item flex flex-col items-center">
+                <img src="./static/PE_D_Topcategories_11_Trousers.jpg" class="w-48 h-48 rounded-full object-cover" />
+                <p class="text-slate-900 font-bold text-sm mt-2">TROUSER</p>
+
+            </div>
+        </div>
+
+        <div class="flex justify-center max-w-screen-xl m-4 gap-4">
+            <div>
+                <img class="rounded-xl" src="./static/PE_D_Platinum_Wedding.jpg" alt="">
+            </div>
+            <div>
+                <img class="rounded-xl" src="./static/PE_D_Platinum_Chinos.jpg" alt="">
+            </div>
+        </div>
+
+        <header class="w-full h-full justify-center items-center max-w-screen-xl mt-4 gap-4 flex flex-col ">
+            <h1 class="text-xl font-sans text-slate-900 font-extrabold pl-4  ">FEATURED COLLECTIONS</h1>
+
+            <div class="flex flex-wrap cursor-pointer justify-center gap-2 items-center mb-4 ">
+                <div><img src="./static/PE_D_FC_Whites.jpg" alt=""></div>
+                <div><img src="./static/PE_D_FC_Black.jpg" alt=""></div>
+                <div><img src="./static/PE_D_FC_Checks.jpg" alt=""></div>
+
+            </div>
+        </header>
+    </section>
+
+
+
+
+
+    <div class="w-full h-full bg-black flex flex-col md:flex-row items-center justify-between gap-2 ">
+        <div class="text-white flex flex-col justify-center m-5 md:w-1/4 gap-4 text-justify">
+            <h2>GET FLAT10% OFF ON APP AND WEB</h2>
+            <p class="text-sm ">Download the Peter England App and get Flat 10% off on your first purchase. Use Code
+                PEFIRST10. T&C applies!</p>
+
+            <div class="flex flex-wrap gap-4 justify-center pb-5 ">
+                <img src="./static/pe_app_store_2x.png" alt="">
+                <img src="./static/pe_google_store_2x.png" alt="">
+            </div>
+        </div>
+
+        <div class="md:w-1/4 flex justify-center pb-5">
+            <img src="./static/PE_QR_Code.png" alt="">
+        </div>
+
+        <div class="md:w-1/3 flex items-baseline ">
+            <img class=" w-[100%] h-full" src="./static/mobilimage-removebg-preview.png" alt="">
+        </div>
+    </div>
+
+    <section class="w-full h-full bg-gray-100 flex flex-col items-center justify-center">
+        <div class="m-5 flex max-w-screen-xl w-[95%] cursor-pointer items-center justify-center flex-wrap">
+            <div class="md:w-2/3 p-5">
+
+
+                <video class="rounded-2xl" src="./static/PETER_ENGLAND_45SEC_10MB.mp4" controls autoplay muted></video>
+            </div>
+
+
+            <div class="md:w-1/3 flex flex-col justify-center p-5 ">
+                <span class="text-black text-sm font-bold mt-5 border-b-4 border-green-500 uppercase self-start">
+                    The Gentlemen's League
+                </span>
+
+                <p class="text-black text-xl mt-4 font-bold font-serif">
+                    Introducing Peter England's Gentlemen's League. An all-new collection that’s inspired by our dearest
+                    game.
+                </p>
+                <button class="text-white bg-blue-900 px-4 py-2 mt-4 rounded-lg self-start font-semibold">
+                    SHOP COLLECTION
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full h-full  flex flex-col items-center justify-center">
+        <div class="m-5 flex max-w-screen-xl w-[95%] h-full cursor-pointer flex-wrap">
+
+            <h2 class="text-xl font-sans text-slate-900 font-bold pl-4 text-start">TRENDING NOW</h2>
+
+            <div class="carousel flex rounded-box max-w-screen-xl h-full space-x-4  overflow-x-auto">
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg01.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Black Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-black uppercase" disabled> BLACK</div>
+                </div>
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg02.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Blue Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-blue-600 uppercase" disabled> BLUE</div>
+                </div>
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg03.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Black Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-black uppercase" disabled> BLACK</div>
+                </div>
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg04.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men White Slim Fit Plane Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100  uppercase" disabled> WHITE</div>
+                </div>
+
+
+
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg05.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men White and sky blue Slim Fit Plane Full Shirt...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100 uppercase" disabled><input type="radio"
+                            class="border-none bg-blue-300 uppercase" disabled> WHITE & BLUE </div>
+                </div>
+
+
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg06.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men white Slim Fit Plane Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100 uppercase" disabled> WHITE</div>
+                </div>
+
+
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg07.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Gray slim fit formal Sleeve...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-300 uppercase" disabled> GRAY</div>
+                </div>
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg08.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men White Slim Fit T Shirt...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100 uppercase" disabled> WHITE</div>
+                </div>
+
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg09.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Black and white Slim Fit T Shirt...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100 uppercase" disabled> WHTIE</div>
+                </div>
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/casualimg10.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Black Slim Fit Shirt...</p>
+
+                    <p class="flex gap-2 items-center"><span class="line-through text-gray-400">$2,299</span>
+                        <span class="text-black">$1,999</span>
+                        <span class="text-red-500">20% OFF</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-black uppercase" disabled> BLACK</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="w-full flex bg-green-900 p-2 justify-center">
+        <div class="flex justify-center items-center p-4 flex-wrap gap-4">
+            <i class="fa-solid fa-gift text-3xl text-white"></i>
+
+            <div class="flex flex-col ">
+                <h2 class="text-white uppercase text-xl font-extrabold">Refer & Earn with the Referral Program</h2>
+                <p class="text-white text-sm font-semibold">Invite your friends and earn up to ₹ 7500 in discounts.</p>
+            </div>
+            <button
+                class="bg-white text-black rounded-sm px-4 py-2 font-bold uppercase hover:shadow-black shadow-sm ">Sign
+                up
+                now</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="w-full">
+        <h2 class="text-center text-2xl font-semibold py-2 mt-6 text-black uppercase">Shop the Look</h2>
+        <div class="flex justify-center items-center p-4 flex-wrap gap-4 ">
+            <div class="relative">
+                <img class="rounded-xl cursor-pointer hover:brightness-75" src="./static/Look 2.jpg" alt="">
+                <i
+                    class="fa-solid fa-share-nodes absolute top-2 right-2 text-white bg-black cursor-pointer bg-opacity-40 p-2 rounded-full"></i>
+            </div>
+
+            <div class="relative">
+                <img class="rounded-xl cursor-pointer  hover:brightness-75" src="./static/PE_D_LB_01_24.jpg" alt="">
+                <i
+                    class="fa-solid fa-share-nodes absolute top-2 right-2 text-white cursor-pointer bg-black bg-opacity-40 p-2 rounded-full"></i>
+            </div>
+
+            <div class="relative">
+                <img class="rounded-xl cursor-pointer hover:brightness-75" src="./static/SL_8.jpg" alt="">
+                <i
+                    class="fa-solid fa-share-nodes absolute top-2 right-2 text-white bg-black cursor-pointer bg-opacity-40 p-2 rounded-full"></i>
+            </div>
+
+            <div class="relative">
+                <img class="rounded-xl cursor-pointer  hover:brightness-75" src="./static/Look 3.jpg" alt="">
+                <i
+                    class="fa-solid fa-share-nodes absolute top-2 right-2 text-white bg-black cursor-pointer bg-opacity-40 p-2 rounded-full"></i>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="flex justify-center items-center mb-10 underline underline-offset-4 font-semibold text-sm text-black  ">
+        <a href="#"> EXPLORE ALL</a>
+    </div>
+
+
+    <div class="w-full bg-green-900">
+        <div class="flex items-center justify-around p-8 m-2 flex-wrap gap-6 ">
+            <div class="flex flex-col ">
+                <p class="text-white text-xs font-semibold uppercase">Peter England Members</p>
+                <h2 class="text-white uppercase text-lg font-semibold pt-1 pb-1">Earn Points Every Time You Purchase
+                </h2>
+                <p class="text-white text-sm ">Register with us to get latest updates and spend your points
+                    to buy.</p>
+            </div>
+            <button
+                class="bg-white text-black rounded-sm px-4 py-2 font-bold uppercase hover:shadow-black shadow-sm ">Sign
+                up
+                now</button>
+        </div>
+    </div>
+
+
+
+    <!-- cart section -->
+    <div class="w-full h-full  flex flex-col items-center justify-center">
+        <div class="m-5 flex max-w-screen-xl w-[95%] h-full cursor-pointer items-center justify-center flex-wrap">
+
+            <h2 class="text-xl font-sans text-slate-900 font-bold pl-4 ">NEW ARRIVALS</h2>
+
+            <div class="carousel flex rounded-box max-w-screen-xl h-full space-x-2 p-2 overflow-x-auto">
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg01.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Blue Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-blue-700 uppercase" disabled> BLUE</div>
+                </div>
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg02.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men White Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100 uppercase" disabled> WHITE</div>
+                </div>
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg03.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men White Slim Fit Printed Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100 uppercase" disabled> WHITE</div>
+                </div>
+
+
+                <div class="carousel-item flex flex-col gap-2 w-72 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg04.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAdfsL SHIRT</span>
+                    <p class="text-black font-semibold">Men white Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100 uppercase" disabled> WHITE</div>
+                </div>
+
+
+
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg05.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Blue Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-blue-950 uppercase" disabled> BLUE</div>
+                </div>
+
+
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg06.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Blue Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-blue-950 uppercase" disabled> BLUE</div>
+                </div>
+
+
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg07.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Red Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-red-700 uppercase" disabled> RED</div>
+                </div>
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg08.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men White Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-gray-100 uppercase" disabled> WHITE</div>
+                </div>
+
+
+
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg09.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Red Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-red-200 uppercase" disabled> BLUSH RED</div>
+                </div>
+                <div class="carousel-item flex flex-col gap-2 w-64 h-auto p-4 bg-white shadow-sm rounded-lg">
+                    <img src="./static/cartimg10.jpg" class="rounded-lg object-cover" />
+
+                    <span class="text-gray-400 text-sm">CASUAL SHIRT</span>
+                    <p class="text-black font-semibold">Men Orange Slim Fit Print Full Sleeve...</p>
+
+                    <p class="flex gap-2 items-center">
+                        <span class="text-black">$1,999</span>
+                    </p>
+                    <div><input type="radio" class="border-none bg-orange-300 uppercase" disabled> ORANGE</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center mb-10 underline underline-offset-4 font-semibold text-sm text-black  ">
+        <a href="#"> VIEW ALL</a>
+    </div>
+
+
+
+    <div class="w-full bg-blue-900">
+        <div class="  flex items-center justify-evenly p-8 m-2 lg:ml-40 lg:mr-40 flex-wrap gap-6 ">
+            <div class=" flex flex-col  ">
+                <div class="text-white uppercase text-2xl font-semibold pt-1 pb-1 min-w-48">
+                    <p><span class="font-extrabold text-3xl">LOCATE</span></p>
+                    <h2>PETER ENGLAND STORE</h2>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <p class="text-white text-sm mb-2">FIND A STORE</p>
+                <div class="flex gap-4 flex-wrap items-center ">
+                    <input type="text" class="p-3 inline-block border-white md:w-1/2 min-w-64 rounded-lg bg-transparent"
+                        placeholder="Enter Your Pin Code/City/Area">
+                    <p><a href="#" class="text-white underline underline-offset-4 text-md">SHOW ME</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="class bg-white w-full h-full text-gray-300 flex flex-wrap gap-10 justify-around pl-5 pr-5 ">
+            <div class="flex flex-col items-center pb-4">
+                <img src="./static/icon/p-hicon-delivery_2x.png" class="w-16 h-16 " />
+                <p class="text-gray-600 text-xs">FREE SHIPPING</p>
+            </div>
+            <div class="flex flex-col items-center pb-4">
+                <img src="./static/icon/pe-hicon-return.png" class="w-16 h-16" />
+                <p class="text-gray-600 text-xs">RETURN WITHIN 15 DAYS</p>
+            </div>
+            <div class="flex flex-col items-center pb-4">
+                <img src="./static/icon/p-eicon-fastdelivery_2x.png" class=" w-16 h-16" />
+                <p class="text-gray-600 text-xs">EXPRESS DELIVERY IN STORE MODE</p>
+            </div>
+
+        </div>
+        <div class="bg-gray-800 w-full h-full text-gray-300 flex flex-wrap gap-10 justify-evenly pb-10 pt-10">
+            <div class=" ml-10 mr-10">
+                <ul class="flex flex-col gap-2 text-sm justify-start ">
+                    <li class="font-extrabold text-gray-200">NEED HELP?</li>
+                    <li><a href="#" class="hover:underline">Order Status</a></li>
+                    <li><a href="#" class="hover:underline">Delivery </a></li>
+                    <li><a href="#" class="hover:underline">Returns</a></li>
+                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                    <li><a href="#" class="hover:underline">Shipping Policy</a></li>
+                    <li><a href="#" class="hover:underline">Return and Cancellation Policy </a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="ml-10 mr-10">
+                <ul class="flex flex-col gap-2 text-sm  ">
+                    <li class="font-extrabold text-gray-200">ABOUT US</li>
+                    <li><a href="#" class="hover:underline">Aditya Birla Fashion & Retail Ltd</a></li>
+                    <li><a href="#" class="hover:underline">Find a Store</a></li>
+                    <li><a href="#" class="hover:underline">Peter England Blogs</a></li>
+                    <li><a href="#" class="hover:underline">Terms and conditions For Membership Program</a></li>
+                    <li><a href="#" class="hover:underline">Bulk Order</a></li>
+                </ul>
+            </div>
+
+
+            <div class="flex flex-col gap-4 text-sm ml-10 mr-10">
+                <p class=" font-extrabold text-gray-200">JOIN THE PETER ENGLAND COMMUNITY</p>
+                <div class="flex gap-2 flex-col">
+                    <input class="p-2 rounded-lg bg-transparent w-full " type="email" name="email" id="email"
+                        placeholder="Enter your email / mobile number">
+
+                    <p>Signup for updates on the latest Peter England collection, campaigns and videos.</p>
+                </div>
+
+                <div class="flex gap-2 justify-between ">
+                    <p class="font-extrabold text-gray-200">FIND US ON SOCIAL</p>
+                    <div class="flex gap-4 flex-wrap">
+                        <a href="#"><i class="fa-brands fa-facebook cursor-pointer"></i></a>
+                        <a href="https://twitter.com/iamkiranrajput" target="_blank">
+                            <i class="fa-brands fa-twitter cursor-pointer"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram cursor-pointer"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube cursor-pointer"></i></a>
+                        <a href="https://www.linkedin.com/in/kiranrajput/" target="_blank"><i
+                                class="fa-brands fa-linkedin cursor-pointer"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/37c426a25e.js" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
